@@ -1,5 +1,5 @@
 # Chocolate Doom 3DS Port
-Makefile modifed from lantus' port. I recommend using [prboom3DS](https://github.com/elhobbs/prboom3ds) instead of this port as it has more features like WAD selction, a keyboard, and 3D.
+Makefile modifed from lantus' port. I recommend using [prboom3DS](https://github.com/elhobbs/prboom3ds) instead of this port as it has more features like WAD selction, a keyboard, and 3D. Game might crash sometimes when quitting.
 ## Compiling
 * Install devkitpro and SDL1.2 for 3DS
 * Build with make -f makefile.doom
