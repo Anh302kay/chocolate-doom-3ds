@@ -1,3 +1,31 @@
+# Chocolate Doom 3DS Port
+Makefile modifed from lantus' port. I recommend using [prboom3DS](https://github.com/elhobbs/prboom3ds) instead of this port as it has more features like WAD selction, a keyboard, and 3D.
+## Compiling
+* Install devkitpro and SDL1.2 for 3DS
+* Build with make -f makefile.doom
+## Running on 3DS
+* Place the doom.3dsx, and doom.smdh into the 3ds folder on the root of the sd card.
+* Create a folder called 'chdoom' in the 3ds folder, and put your wads into it.
+* Run Chocolate Doom from the homebrew launcher
+## Controls
+ Controls can be edited from ```/3ds/chdoom/default.cfg``` and ```/3ds/chdoom/chocolate-doom.cfg```. Switching weapons will have to be changed if not playing on a new 3DS variant
+* D-Pad and circle pad to move around
+* A to shoot
+* B to use item
+* X to sprint
+* L or R to strafe
+* ZL and ZR to switch weapons
+## Multiple Wads
+You can play different wads by launching the 3dsx file with the launch argument ```-iwad [WAD_FILE_HERE]``` to specify the wad. This can be done in the homebrew launcher through an XML file. An example of an XML file will be given here:
+```
+<shortcut>
+<name>Doom 1</name>
+<description>doom 1 idk sduighf</description>
+<author>Anh302kay</author>
+<executable>/3ds/doom.3dsx</executable>
+<arg>-iwad DOOM.WAD</arg>
+</shortcut>
+```
 # Chocolate Doom
 
 Chocolate Doom aims to accurately reproduce the original DOS version of
